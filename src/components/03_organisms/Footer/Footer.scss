@@ -1,50 +1,16 @@
 .container--footer {
-  background-color: var(--light);
+  background-color: var(--purple-n1);
   width: 100%;
   position: relative;
-  padding-top: 72px;
-  padding-bottom: 60px;
+  padding: 16px 80px 32px 80px;
+  display: flex;
+  align-items: center;
 
-  @include mq-down(md) {
-    padding-top: 64px;
-  }
+  .footer__content {
+    margin-left: 80px;
 
-  .footer__text {
-    width: 130px;
-    margin: auto;
-
-    a {
-      text-decoration: none;
-    }
-
-    .text--small {
-      margin-bottom: 16px;
-    }
-  }
-
-  .downloads {
-    display: flex;
-    width: 100%;
-    justify-content: flex-end;
-    position: absolute;
-    top: 38%;
-    right: 10%;
-
-    @include mq-down(md) {
-      position: relative;
-      margin-top: 32px;
-      width: 70%;
-      right: 0;
-      margin: auto;
-      justify-content: space-between;
-    }
-
-    .container--button-store {
-      margin-left: 32px;
-
-      @include mq-down(md) {
-        margin-left: 0;
-      }
+    .text--footer {
+      margin-top: 8px;
     }
   }
 }

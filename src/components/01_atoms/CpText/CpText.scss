@@ -1,66 +1,18 @@
 *[class^="text--"] {
-  font-family: 'Poppins', "Work Sans", sans-serif;
+  font-family: 'Montserrat', "Work Sans", sans-serif;
 }
 
-.text--body-m {
-  color: var(--white);
-  font-weight: 400;
-  font-size: 2rem;
-  line-height: 3rem;
+.text--footer-title {
+  color: var(--purple-n2);
+  font-family: 'Dela Gothic One', "Work Sans", sans-serif;
+  font-size: 1.2rem;
+  width: 134px;
+  border-bottom: 1px solid var(--purple-n2);
+  padding-bottom: 8px;
 }
 
-.text--button-m {
-  color: var(--green-n1);
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 1.1rem;
-
-  &.brand {
-    font-weight: 700;
-  }
-}
-
-.text--description {
-  color: var(--green-n1);
-  font-size: 2.5rem;
-  line-height: 3.7rem;
-
-  &.bold {
-    font-weight: bold;
-  }
-}
-
-.text--hero-title {
-  color: var(--light);
-  font-size: 3.9rem;
-
-  &.ogg {
-    font-family: 'Ogg', "Work Sans", sans-serif;
-  }
-
-  &.green {
-    color: var(--green-n1);
-  }
-}
-
-.text--hero {
-  color: var(--light);
-  font-size: 2.5rem;
-}
-
-.text--article {
-  color: var(--light);
-  font-size: 2rem;
-  line-height: 3rem;
-}
-
-.text--slide {
-  color: var(--green-n1);
-  font-size: 1.6rem;
-  line-height: 2.4rem;
-}
-
-.text--small {
-  color: var(--dark);
-  font-size: 1.4rem;
+.text--footer {
+  color: var(--purple-n2);
+  font-size: 1.2rem;
+  font-weight: bold;
 }

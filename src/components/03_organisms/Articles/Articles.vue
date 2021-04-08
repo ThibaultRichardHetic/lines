@@ -2,7 +2,6 @@
   <div id="articles" class="container--articles">
     <div class="article">
       <div class="article__img">
-        <img src="@/assets/images/article-1.png" alt>
       </div>
       <div class="article__text">
         <CpText type="hero-title ogg">{{ articles[0].title }}</CpText>
@@ -11,7 +10,6 @@
     </div>
     <div class="article mid">
       <div class="article__img">
-        <img src="@/assets/images/article-2.png" alt>
       </div>
       <div class="article__text">
         <CpText type="hero-title ogg">{{ articles[1].title }}</CpText>
@@ -20,7 +18,6 @@
     </div>
     <div class="article">
       <div class="article__img">
-        <img src="@/assets/images/article-3.png" alt>
       </div>
       <div class="article__text">
         <CpText type="hero-title ogg">{{ articles[2].title }}</CpText>

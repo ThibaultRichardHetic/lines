@@ -1,32 +1,32 @@
 <template>
   <div class="container--footer">
-    <div class="footer__text">
-      <a href="https://fr.louisvuitton.com/fra-fr/homepage/" target="_blank">
-        <CpText type="small">Site Louis Vuitton</CpText>
-      </a>
-      <a href=https://www.richard-thibault.com/ target="_blank">
-        <CpText type="small">Mentions Légales</CpText>
-      </a>
-      <a href=https://www.richard-thibault.com/ target="_blank">
-        <CpText type="small">Cookies</CpText>
-      </a>
+    <CpLink tag="/" type="logo">
+      <img src="@/assets/images/logo.png" alt>
+    </CpLink>
+    <div class="footer__content">
+      <CpText tag="h4" type="footer-title">Lines</CpText>
+      <CpText tag="p" type="footer">Newsletter</CpText>
+      <CpText tag="p" type="footer">Mentions légales</CpText>
+      <CpText tag="p" type="footer">Cookies</CpText>
     </div>
-    <div class="downloads">
-      <ButtonStore color="dark" brand="apple"/>
-      <ButtonStore color="dark" brand="android"/>
+    <div class="footer__content">
+      <CpText tag="h4" type="footer-title">Nous suivre</CpText>
+      <CpText tag="p" type="footer">Facebook</CpText>
+      <CpText tag="p" type="footer">Instagram</CpText>
+      <CpText tag="p" type="footer">Twitter</CpText>
     </div>
   </div>
 </template>
 
 <script>
 import CpText from "@/components/01_atoms/CpText/CpText.vue";
-import ButtonStore from "@/components/02_molecules/ButtonStore/ButtonStore.vue";
+import CpLink from "@/components/01_atoms/CpLink/CpLink.vue";
 
 export default {
   name: "Footer",
   components: {
     CpText,
-    ButtonStore
+    CpLink,
   },
   data() {
     return {

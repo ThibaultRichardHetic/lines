@@ -1,5 +1,5 @@
 <template>
-  <router-link to="/" class="tempostyle" :class="`text__${type}`">
+  <router-link :to={to} class="tempostyle" :class="`link--${type}`">
     <slot />
   </router-link>
 </template>
@@ -11,6 +11,10 @@ export default {
     type: {
       type: String,
       default:'a',
+    },
+    to: {
+      type: String,
+      default: '/',
     }
   },
 }

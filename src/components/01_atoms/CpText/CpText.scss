@@ -1,0 +1,66 @@
+*[class^="text--"] {
+  font-family: 'Poppins', "Work Sans", sans-serif;
+}
+
+.text--body-m {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.text--button-m {
+  color: var(--green-n1);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.1rem;
+
+  &.brand {
+    font-weight: 700;
+  }
+}
+
+.text--description {
+  color: var(--green-n1);
+  font-size: 2.5rem;
+  line-height: 3.7rem;
+
+  &.bold {
+    font-weight: bold;
+  }
+}
+
+.text--hero-title {
+  color: var(--light);
+  font-size: 3.9rem;
+
+  &.ogg {
+    font-family: 'Ogg', "Work Sans", sans-serif;
+  }
+
+  &.green {
+    color: var(--green-n1);
+  }
+}
+
+.text--hero {
+  color: var(--light);
+  font-size: 2.5rem;
+}
+
+.text--article {
+  color: var(--light);
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+.text--slide {
+  color: var(--green-n1);
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.text--small {
+  color: var(--dark);
+  font-size: 1.4rem;
+}

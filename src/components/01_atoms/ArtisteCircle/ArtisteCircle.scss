@@ -1,0 +1,9 @@
+.artiste-circle {
+  border-radius: 100%;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: inherit;
+  }
+}

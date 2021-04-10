@@ -6,7 +6,7 @@
         <CpText tag="p" type="main">{{ text }}</CpText>
         <CpText tag="p" type="main">{{ text2 }}</CpText>
       </div>
-      <div class="hero__artiste" v-for="artiste in artistes" :key="artiste.name">
+      <div :class="`hero__artiste n${index}`" v-for="(artiste, index) in artistes" :key="artiste.name">
         <ArtisteCircle :image="`${artiste.url}`"/>
         <TripleText :text="`${artiste.score} mots`" />
       </div>

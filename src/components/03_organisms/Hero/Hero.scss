@@ -39,5 +39,21 @@
       margin: auto;
       margin-bottom: 8px;
     }
+
+    &.n0{
+      position: absolute;
+      right: percent(200, 1440);
+      top: 12%;
+    }
+    &.n1{
+      position: absolute;
+      right: percent(100, 1440);
+      top: 60%;
+    }
+    &.n2{
+      position: absolute;
+      right: percent(500, 1440);
+      top: 45%;
+    }
   }
 }

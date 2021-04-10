@@ -1,0 +1,17 @@
+.container--vb-large {
+  padding: 48px 80px 300px 80px;
+  background: linear-gradient(
+    180deg,
+    #5f3a76 0%,
+    rgba(179, 123, 225, 0.8) 100%
+  );
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 82%);
+  box-sizing: border-box;
+  
+  .container--text {
+    width: percent(720, 1280);
+    .text--title {
+      margin-bottom: 48px;
+    }
+  }
+}

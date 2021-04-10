@@ -1,0 +1,15 @@
+.container--speed {
+  padding: 0 80px 0 80px;
+  display: flex;
+
+  .container--graph {
+    width: 55%;
+  }
+
+  .container--text {
+    width: 45%;
+    .text--title {
+      margin-bottom: 48px;
+    }
+  }
+}

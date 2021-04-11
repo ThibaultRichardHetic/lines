@@ -11,7 +11,7 @@
             <CpText tag="h4" type="card-title">{{ artiste.name }}</CpText>
             <CpText tag="p" type="card">Titres : {{ artiste.titres }}</CpText>
             <CpText tag="p" type="card">Albums : {{ artiste.albums }}</CpText>
-            <CpLink type="button-card">Voir +</CpLink>
+            <CpLink :page="`artiste/${artiste.to}`" type="button-card">Voir +</CpLink>
           </div>
         </div>
       </div>
@@ -48,49 +48,57 @@ export default {
           name: "Oxmo Puccino",
           titres: 37,
           albums: 3,
-          image: "oxmo-puccino.jpeg"
+          image: "oxmo-puccino.jpeg",
+          to: "oxmo-puccino"
         },
         {
           name: "PNL",
           titres: 137,
           albums: 3,
-          image: "pnl.jpeg"
+          image: "pnl.jpeg",
+          to: "pnl"
         },
         {
           name: "JUL",
           titres: 327,
           albums: 7,
-          image: "jul.jpeg"
+          image: "jul.jpeg",
+          to: "jul"
         },
         {
           name: "Nekfeu",
           titres: 82,
           albums: 3,
-          image: "nekfeu.png"
+          image: "nekfeu.png",
+          to: "nekfeu"
         },
         {
           name: "Oxmo Puccino",
           titres: 37,
           albums: 3,
-          image: "oxmo-puccino.jpeg"
+          image: "oxmo-puccino.jpeg",
+          to: "oxmo-puccino"
         },
         {
           name: "PNL",
           titres: 137,
           albums: 3,
-          image: "pnl.jpeg"
+          image: "pnl.jpeg",
+          to: "pnl"
         },
         {
           name: "JUL",
           titres: 327,
           albums: 7,
-          image: "jul.jpeg"
+          image: "jul.jpeg",
+          to: "jul"
         },
         {
           name: "Nekfeu",
           titres: 82,
           albums: 3,
-          image: "nekfeu.png"
+          image: "nekfeu.png",
+          to: "nekfeu"
         }
       ]
     };

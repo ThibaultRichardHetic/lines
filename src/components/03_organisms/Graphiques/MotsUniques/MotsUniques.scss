@@ -1,0 +1,44 @@
+.container--mots-uniques {
+
+  .graph {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 16px;
+    justify-content: space-between;
+    .classement {
+      position: relative;
+      .artiste-circle {
+        position: absolute;
+        width: 72px;
+        height: 72px;
+        transform: translateX(-36px);
+        &:nth-of-type(3n-1) {
+          top: 100px;
+        }
+      }
+    }
+  }
+  
+  .legend {
+    position: relative;
+    .axe {
+      width: 100%;
+      height: 4px;
+      background-color: var(--yellow);
+    }
+    .step {
+      width: 4px;
+      height: 9px;
+      position: absolute;
+      left: 0;
+      top: -6px;
+      background-color: var(--yellow);
+
+      span {
+        position: absolute;
+        transform: translate(-45%, 16px);
+      }
+    }
+  }
+}

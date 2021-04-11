@@ -4,19 +4,19 @@
       <CpText tag="h2" type="title shadow">{{ title }}</CpText>
       <CpText tag="p" type="main">{{ text }}</CpText>
     </div>
-    <div class="container--graph">
-
-    </div>
+    <MotsUniques />
   </div>
 </template>
 
 <script>
 import CpText from "@/components/01_atoms/CpText/CpText.vue";
+import MotsUniques from "@/components/03_organisms/Graphiques/MotsUniques/MotsUniques";
 
 export default {
   name: "VbLarge",
   components: {
     CpText,
+    MotsUniques
   },
   data() {
     return {

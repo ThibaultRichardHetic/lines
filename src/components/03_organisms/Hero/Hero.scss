@@ -7,7 +7,7 @@
   height: 772px;
   box-sizing: border-box;
   position: relative;
-
+  
   .hero--bg {
     padding: 96px 80px 0 80px;
     box-sizing: border-box;
@@ -17,17 +17,23 @@
       115.88deg,
       rgba(239, 242, 235, 0.4) 6.75%,
       rgba(239, 242, 235, 0.1) 111.31%
-    );
-    backdrop-filter: blur(4px);
-    background: rgba(95, 58, 118, 0.85);
+      );
+      backdrop-filter: blur(4px);
+      background: rgba(95, 58, 118, 0.85);
+      display: flex;
+      justify-content: space-between;
   }
 
   .hero__text {
-    width: 50%;
+    width: 55%;
 
     .text--title {
       margin-bottom: 48px;
     }
+  }
+
+  .text--ext {
+    width: 40%;
   }
 
   .hero__artiste {
@@ -43,17 +49,17 @@
     &.n0{
       position: absolute;
       right: percent(200, 1440);
-      top: 12%;
+      top: 32%;
     }
     &.n1{
       position: absolute;
       right: percent(100, 1440);
-      top: 60%;
+      top: 68%;
     }
     &.n2{
       position: absolute;
       right: percent(500, 1440);
-      top: 45%;
+      top: 55%;
     }
   }
 }

@@ -6,6 +6,7 @@
         <CpText tag="p" type="main">{{ text }}</CpText>
         <CpText tag="p" type="main">{{ text2 }}</CpText>
       </div>
+        <CpText tag="h2" type="ext">{{ title2 }}</CpText>
       <div :class="`hero__artiste n${index}`" v-for="(artiste, index) in artistes" :key="artiste.name">
         <ArtisteCircle :image="`${artiste.url}`"/>
         <TripleText :text="`${artiste.score} mots`" />
@@ -29,6 +30,7 @@ export default {
   data() {
     return {
       title: "DÉCOUVREZ LA RICHESSE DE VOS ARTISTES PRÉFÉRÉES",
+      title2: "record de mots différent sur un seul morceau",
       text:
         "Lines est un projet permettant d’analyser les textes de vos artistes afin d’en sortir des données.",
       text2:

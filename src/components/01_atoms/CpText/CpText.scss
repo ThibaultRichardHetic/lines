@@ -13,7 +13,8 @@
 
 .text--title,
 .text--triple,
-.text--triple-ext {
+.text--triple-ext,
+.text--ext {
   font-family: "Dela Gothic One", "Work Sans", sans-serif;
   font-size: 3.2rem;
   line-height: 4.6rem;
@@ -21,11 +22,11 @@
 }
 
 .text--triple,
-.text--triple-ext {
+.text--triple-ext, {
   line-height: 1.6rem;
 }
 
-.text--triple-ext {
+.text--triple-ext, .text--ext {
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--white);

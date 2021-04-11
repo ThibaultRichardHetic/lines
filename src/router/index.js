@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home/Home.vue";
+import Artiste from "../views/Artiste/Artiste.vue";
 
 Vue.use(VueRouter);
 
@@ -11,9 +12,9 @@ const routes = [
     component: Home
   },
   {
-    path: "/about/",
-    name: "about",
-    component: Home
+    path: "/artiste/:id",
+    name: "artiste",
+    component: Artiste
   }
 ];
 

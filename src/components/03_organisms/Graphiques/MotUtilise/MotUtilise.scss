@@ -1,0 +1,35 @@
+.container--mot-utile {
+  margin-bottom: 54px;
+
+  .graph {
+    height: 360px;
+    position: relative;
+
+    .classement {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-around;
+      .winner {
+        background: linear-gradient(180deg, #fbd46d 0%, #ff9c71 100%);
+        border-radius: 10px;
+        height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .artiste-circle {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          left: -20px;
+        }
+        .word {
+          position: absolute;
+        }
+      }
+    }
+  }
+}

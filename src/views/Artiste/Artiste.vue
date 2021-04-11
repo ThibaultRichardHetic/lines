@@ -1,19 +1,31 @@
 <template>
-  <div class="container--artiste">
+  <div class="page--artiste">
     artiste {{ $route.params.id }}
+    <Header/>
+    <Hero home="1" />
+    <Carousel/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 
+import Header from "@/components/03_organisms/Header/Header.vue";
+import Hero from "@/components/03_organisms/Hero/Hero.vue";
+import Carousel from "@/components/03_organisms/Carousel/Carousel.vue";
+import Footer from "@/components/03_organisms/Footer/Footer.vue";
 
 export default {
   name: "Artiste",
   components: {
+    Header,
+    Hero,
+    Carousel,
+    Footer
   },
   data() {
     return {
-      text: "Louis vuitton test"
+      text: "Louis vuitton test",
     };
   }
 };

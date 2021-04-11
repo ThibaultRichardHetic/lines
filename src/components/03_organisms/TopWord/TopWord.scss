@@ -1,0 +1,13 @@
+.container--topword {
+  background-color: var(--black-n2);
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+
+  .container--text {
+    width: 55%;
+  }
+  .container--mot-utile {
+    width: 40%;
+  }
+}

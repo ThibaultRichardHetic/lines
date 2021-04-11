@@ -1,0 +1,59 @@
+{
+  "artiste": [
+    {
+      "name": "oxmo",
+      "image": "oxmo-puccino.jpeg",
+      "mpm": 30,
+      "top_word": "Vie",
+      "twScore": 36,
+      "mots_uniques": 7600,
+      "titres": 37,
+      "albums": 3
+    },
+    {
+      "name": "pnl",
+      "image": "pnl.jpeg",
+      "mpm": 22,
+      "top_word": "Belle",
+      "twScore": 24,
+      "mots_uniques": 5431,
+      "titres": 132,
+      "albums": 3,
+      "surname": "Ademo & NOS",
+      "age": "35 & 32",
+      "lieux": "Corbeil-Essones",
+      "description": "PNL est une des têtes d’affiche du rap français sur la 2eme partie de la décennie 2010. Les deux frères ont su apporter une touche originale et unique au rap français. Un rap planant, mélancolique et définitivement différent. Malgré ce positionnement artistique différenciant, sont-ils vraiment différent dans leurs lyrics et le message qu’ils font passer ? Quelques statistiques pour vous faire une idée.",
+      "med_time": "3:57"
+    },
+    {
+      "name": "jul",
+      "image": "jul.jpeg",
+      "mpm": 31,
+      "top_word": "Monde",
+      "twScore": 29,
+      "mots_uniques": 3500,
+      "titres": 371,
+      "albums": 7
+    },
+    {
+      "name": "nekfeu",
+      "image": "nekfeu.png",
+      "mpm": 41,
+      "top_word": "Soir",
+      "twScore": 51,
+      "mots_uniques": 10020,
+      "titres": 82,
+      "albums": 3
+    },
+    {
+      "name": "booba",
+      "image": "booba.jpeg",
+      "mpm": 45,
+      "top_word": "Mieux",
+      "twScore": 44,
+      "mots_uniques": 7200,
+      "titres": 92,
+      "albums": 5
+    }
+  ]
+}

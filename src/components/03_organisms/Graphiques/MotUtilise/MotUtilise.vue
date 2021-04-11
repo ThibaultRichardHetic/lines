@@ -1,29 +1,21 @@
 <template>
-  <div class="container--mots-minute">
-    <CpText tag="h3" type="ext purple">{{ title }}</CpText>
+  <div class="container--mot-utile">
+    <CpText tag="h3" type="ext">{{ title }}</CpText>
     <div class="graph">
-      <div class="legend">
-        <div class="steps">
-          <div
-            class="step"
-            v-for="step in steps"
-            :key="step"
-            :style="`top:${pourcentageRevert(step ,step_max)}%;`"
-          >
-            <CpText tag="span" type="step">{{ step }}</CpText>
-          </div>
-        </div>
-        <div class="axe"></div>
-      </div>
       <div class="classement">
         <div
           class="winner"
           v-for="artiste in myJson.artiste"
           :key="artiste.name"
-          :style="`height:${pourcentage(artiste.mpm,step_max)}%;`"
+          :style="`width:${pourcentage(artiste.twScore,step_max)}%;`"
         >
-          <CpText tag="p" type="value">{{ artiste.mpm }}</CpText>
+          <CpText tag="p" type="value">{{ artiste.twScore }}</CpText>
           <ArtisteCircle :image="artiste.image"/>
+          <CpText
+            tag="p"
+            type="value word"
+            :style="`left:${pourcentage(artiste.twScore,step_max) + 4}%;`"
+          >{{ artiste.top_word }}</CpText>
         </div>
       </div>
     </div>
@@ -37,7 +29,7 @@ import ArtisteCircle from "@/components/01_atoms/ArtisteCircle/ArtisteCircle.vue
 import data_artiste from "@/assets/data/Artistes.json";
 
 export default {
-  name: "MotsUniques",
+  name: "MotUtilse",
   components: {
     CpText,
     ArtisteCircle
@@ -67,5 +59,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./MotsMinute.scss";
+@import "./MotUtilise.scss";
 </style>

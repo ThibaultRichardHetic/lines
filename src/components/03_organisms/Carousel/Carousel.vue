@@ -11,7 +11,7 @@
             <CpText tag="h4" type="card-title">{{ artiste.name }}</CpText>
             <CpText tag="p" type="card">Titres : {{ artiste.titres }}</CpText>
             <CpText tag="p" type="card">Albums : {{ artiste.albums }}</CpText>
-            <CpLink :page="`artiste/${artiste.to}`" type="button-card">Voir +</CpLink>
+            <CpLink :page="`/artiste/${artiste.to}`" type="button-card">Voir +</CpLink>
           </div>
         </div>
       </div>
@@ -49,7 +49,7 @@ export default {
           titres: 37,
           albums: 3,
           image: "oxmo-puccino.jpeg",
-          to: "oxmo-puccino"
+          to: "oxmo"
         },
         {
           name: "PNL",

@@ -8,7 +8,7 @@
           hover=true
           :name="artiste.name"
           :score="artiste.mots_uniques"
-          v-for="(artiste, index) in artistes"
+          v-for="(artiste, index) in myJson.artiste"
           :key="index"
           :style="`left:${pourcentage(artiste.mots_uniques, step_max)}%`"
         />
@@ -34,6 +34,8 @@
 import CpText from "@/components/01_atoms/CpText/CpText.vue";
 import ArtisteCircle from "@/components/01_atoms/ArtisteCircle/ArtisteCircle.vue";
 
+import data_artiste from "@/assets/data/Artistes.json";
+
 export default {
   name: "MotsUniques",
   components: {
@@ -45,33 +47,7 @@ export default {
       title: "Nombre de mots unique ",
       steps: [0, 3000, 5000, 7000, 9000, 11000],
       step_max: 12000,
-      artistes: [
-        {
-          name: "Oxmo Puccino",
-          image: "oxmo-puccino.jpeg",
-          mots_uniques: 7600
-        },
-        {
-          name: "PNL",
-          image: "pnl.jpeg",
-          mots_uniques: 5431
-        },
-        {
-          name: "JUL",
-          image: "jul.jpeg",
-          mots_uniques: 3500
-        },
-        {
-          name: "Nekfeu",
-          image: "nekfeu.png",
-          mots_uniques: 10020
-        },
-        {
-          name: "Booba",
-          image: "booba.jpeg",
-          mots_uniques: 7200
-        }
-      ]
+      myJson: data_artiste,
     };
   },
   methods: {

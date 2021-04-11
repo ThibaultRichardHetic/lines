@@ -1,0 +1,64 @@
+.container--mots-minute {
+  margin-bottom: 54px;
+
+  .graph {
+    height: 360px;
+    display: flex;
+    position: relative;
+
+    .classement {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-around;
+      .winner {
+        background: linear-gradient(180deg, #fbd46d 0%, #ff9c71 100%);
+        border-radius: 10px;
+        width: 28px;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          transform: rotate(-90deg);
+        }
+        .artiste-circle {
+          width: 40px;
+          height: 40px;
+          position: absolute;
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  .legend {
+    position: relative;
+    height: 100%;
+    display: flex;
+    .axe {
+      width: 4px;
+      height: 100%;
+      background-color: var(--yellow);
+    }
+    .steps {
+      height: 100%;
+      width: 32px;
+    }
+    .step {
+      width: 9px;
+      height: 4px;
+      position: absolute;
+      left: 27px;
+      bottom: 0%;
+      background-color: var(--yellow);
+
+      span {
+        position: absolute;
+        transform: translate(-115%, -8px);
+      }
+    }
+  }
+}

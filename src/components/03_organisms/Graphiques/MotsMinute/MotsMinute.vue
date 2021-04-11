@@ -1,29 +1,29 @@
 <template>
-  <div class="container--mots-uniques">
-    <CpText tag="h3" type="ext">{{ title }}</CpText>
+  <div class="container--mots-minute">
+    <CpText tag="h3" type="ext purple">{{ title }}</CpText>
     <div class="graph">
-      <div class="classement">
-        <ArtisteCircle
-          :image="artiste.image"
-          hover=true
-          :name="artiste.name"
-          :score="artiste.mots_uniques"
-          v-for="(artiste, index) in artistes"
-          :key="index"
-          :style="`left:${pourcentage(artiste.mots_uniques, step_max)}%`"
-        />
-      </div>
       <div class="legend">
-        <div class="axe"></div>
         <div class="steps">
           <div
             class="step"
-            v-for="(step, index) in steps"
+            v-for="step in steps"
             :key="step"
-            :style="`left:${index * 19}%;`"
+            :style="`top:${pourcentageRevert(step ,step_max)}%;`"
           >
-            <CpText tag="span" type="main">{{ step }}</CpText>
+            <CpText tag="span" type="step">{{ step }}</CpText>
           </div>
+        </div>
+        <div class="axe"></div>
+      </div>
+      <div class="classement">
+        <div
+          class="winner"
+          v-for="artiste in artistes"
+          :key="artiste.name"
+          :style="`height:${pourcentage(artiste.mpm,step_max)}%;`"
+        >
+          <CpText tag="p" type="value">{{ artiste.mpm }}</CpText>
+          <ArtisteCircle :image="artiste.image"/>
         </div>
       </div>
     </div>
@@ -42,39 +42,45 @@ export default {
   },
   data() {
     return {
-      title: "Nombre de mots unique ",
-      steps: [0, 3000, 5000, 7000, 9000, 11000],
-      step_max: 12000,
+      title: "Nombre de mots par minute",
+      steps: [0, 10, 20, 30, 40, 50],
+      step_max: 60,
       artistes: [
         {
           name: "Oxmo Puccino",
           image: "oxmo-puccino.jpeg",
-          mots_uniques: 7600
+          mpm: 30
         },
         {
           name: "PNL",
           image: "pnl.jpeg",
-          mots_uniques: 5431
+          mpm: 22
         },
         {
           name: "JUL",
           image: "jul.jpeg",
-          mots_uniques: 3500
+          mpm: 31
         },
         {
           name: "Nekfeu",
           image: "nekfeu.png",
-          mots_uniques: 10020
+          mpm: 41
         },
         {
           name: "Booba",
           image: "booba.jpeg",
-          mots_uniques: 7200
+          mpm: 45
         }
       ]
     };
   },
   methods: {
+    pourcentageRevert: function(a, b) {
+      let result = (a * 100) / b;
+      result = 100 - result;
+      result = Math.round(result);
+      return result;
+    },
     pourcentage: function(a, b) {
       let result = (a * 100) / b;
       result = Math.round(result);
@@ -85,5 +91,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./MotsUniques.scss";
+@import "./MotsMinute.scss";
 </style>

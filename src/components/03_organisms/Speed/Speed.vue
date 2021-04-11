@@ -1,6 +1,6 @@
 <template>
   <div class="container--speed">
-    <div class="container--graph"></div>
+    <MotsMinute />
     <div class="container--text">
       <CpText tag="h2" type="title purple">{{ title }}</CpText>
       <CpText tag="p" type="main purple">{{ text }}</CpText>
@@ -10,11 +10,13 @@
 
 <script>
 import CpText from "@/components/01_atoms/CpText/CpText.vue";
+import MotsMinute from "@/components/03_organisms/Graphiques/MotsMinute/MotsMinute";
 
 export default {
   name: "Speed",
   components: {
-    CpText
+    CpText,
+    MotsMinute
   },
   data() {
     return {

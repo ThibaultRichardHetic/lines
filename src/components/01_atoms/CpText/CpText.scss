@@ -30,6 +30,22 @@
   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--white);
+  &.purple {
+    -webkit-text-stroke-color: var(--purple-n2);
+  }
+}
+
+.text--step {
+  font-family: "Dela Gothic One", "Work Sans", sans-serif;
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--purple-n1);
+  font-size: 2rem;
+}
+
+.text--value {
+  font-family: "Dela Gothic One", "Work Sans", sans-serif;
+  font-size: 2rem;
 }
 
 .text--main {

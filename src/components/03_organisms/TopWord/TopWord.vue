@@ -4,13 +4,15 @@
       <CpText tag="h2" type="title">{{ title }}</CpText>
       <CpText tag="p" type="main">{{ text }}</CpText>
     </div>
-    <MotUtilise />
+    <MotUtilise type="all" :data="myJson"/>
   </div>
 </template>
 
 <script>
 import CpText from "@/components/01_atoms/CpText/CpText.vue";
 import MotUtilise from "@/components/03_organisms/Graphiques/MotUtilise/MotUtilise";
+
+import data_artiste from "@/assets/data/Artistes.json";
 
 export default {
   name: "TopWord",
@@ -22,7 +24,8 @@ export default {
     return {
       title: "Top word",
       text:
-        "En tant qu’artiste, il est important de se créer un univers propre, pour se démarquer. Cette création d’univers passe notamment par le choix de mots réccurents. Ce choix ancrera l’auditeur dans l’univers voulu, cru, sombre, digital, lyrique..."
+        "En tant qu’artiste, il est important de se créer un univers propre, pour se démarquer. Cette création d’univers passe notamment par le choix de mots réccurents. Ce choix ancrera l’auditeur dans l’univers voulu, cru, sombre, digital, lyrique...",
+      myJson: data_artiste
     };
   }
 };

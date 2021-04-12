@@ -21,8 +21,11 @@
     );
     backdrop-filter: blur(4px);
     background: rgba(95, 58, 118, 0.85);
-    display: flex;
-    justify-content: space-between;
+    
+    .hero--home {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .hero__text {

@@ -2,7 +2,7 @@
   <div class="container--hero">
     <div class="hero--bg">
       <!-- Hero de la homepage -->
-      <div v-if="home === '0'">
+      <div class="hero--home" v-if="home === '0'">
         <div class="hero__text">
           <CpText tag="h1" type="title">{{ title }}</CpText>
           <CpText tag="p" type="main">{{ text }}</CpText>

@@ -29,7 +29,29 @@
       "time_min": "3:08",
       "time_max": "5:29",
       "time_min_name": "Menace",
-      "time_max_name": "Dans ta rue"
+      "time_max_name": "Dans ta rue",
+      "top_words": [
+        {
+          "word": "vivre",
+          "iteration": 230
+        },
+        {
+          "word": "ouais",
+          "iteration": 317
+        },
+        {
+          "word": "vendre",
+          "iteration": 172
+        },
+        {
+          "word": "famille",
+          "iteration": 168
+        },
+        {
+          "word": "seul",
+          "iteration": 153
+        }
+      ]
     },
     {
       "name": "JUL",

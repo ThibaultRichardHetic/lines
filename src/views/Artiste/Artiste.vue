@@ -1,10 +1,11 @@
 <template>
   <div class="page--artiste">
     <Header/>
-    <Hero home="1" />
+    <Hero home="1"/>
     <div v-for="artiste in myJson.artiste" :key="artiste.name">
       <div v-if="$route.params.id === artiste.to">
         <MedTime :data="artiste"/>
+        <MotUtilise :data="artiste" type="artiste"/>
       </div>
     </div>
     <Carousel/>
@@ -13,10 +14,10 @@
 </template>
 
 <script>
-
 import Header from "@/components/03_organisms/Header/Header.vue";
 import Hero from "@/components/03_organisms/Hero/Hero.vue";
 import MedTime from "@/components/03_organisms/Graphiques/MedTime/MedTime.vue";
+import MotUtilise from "@/components/03_organisms/Graphiques/MotUtilise/MotUtilise";
 import Carousel from "@/components/03_organisms/Carousel/Carousel.vue";
 import Footer from "@/components/03_organisms/Footer/Footer.vue";
 
@@ -28,6 +29,7 @@ export default {
     Header,
     Hero,
     MedTime,
+    MotUtilise,
     Carousel,
     Footer
   },
@@ -39,7 +41,7 @@ export default {
   },
   methods: {
     print: function(a) {
-      console.log(a)
+      console.log(a);
       return a;
     }
   }
@@ -47,5 +49,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./Artiste.scss"
+@import "./Artiste.scss";
 </style>

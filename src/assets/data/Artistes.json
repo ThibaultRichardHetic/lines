@@ -25,7 +25,11 @@
       "age": "35 & 32",
       "lieux": "Corbeil-Essones",
       "description": "PNL est une des têtes d’affiche du rap français sur la 2eme partie de la décennie 2010. Les deux frères ont su apporter une touche originale et unique au rap français. Un rap planant, mélancolique et définitivement différent. Malgré ce positionnement artistique différenciant, sont-ils vraiment différent dans leurs lyrics et le message qu’ils font passer ? Quelques statistiques pour vous faire une idée.",
-      "med_time": "3:57"
+      "time_med": "3:57",
+      "time_min": "3:08",
+      "time_max": "5:29",
+      "time_min_name": "Menace",
+      "time_max_name": "Dans ta rue"
     },
     {
       "name": "JUL",

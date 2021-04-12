@@ -1,28 +1,18 @@
-.button--primary, .button--destructive
-{
+.button--active,
+.button--inactive {
   width: fit-content;
-  border-radius: 3px;
   transition: all 0.2s;
   cursor: pointer;
-  padding: 0.8rem 1.6rem;
-}
+  padding: 0.8rem 3.2rem;
+  background: linear-gradient(180deg, #ff9c71 0%, #fbd46d 100%);
+  border-radius: 10px;
 
-.button--primary
-{
-  background-color: var(--global-base);
-
-  &:hover
-  {
-    background-color: var(--global-base-light);
+  &:hover {
+    transition: all 0.2s;
+    background: var(--orange-n1);
   }
 }
 
-.button--destructive
-{
-  background-color: var(--global-danger-base);
-
-  &:hover
-  {
-    background-color: var(--global-danger-light);
-  }
+.button--inactive {
+  background: var(--orange-n2);
 }

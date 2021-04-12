@@ -15,7 +15,7 @@ export default {
   props: {
     type: {
       type: String,
-      default: "primary"
+      default: "active"
     },
     content: {
       type: String,

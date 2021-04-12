@@ -4,10 +4,10 @@
       "name": "Oxmo Puccino",
       "image": "oxmo-puccino.jpeg",
       "to": "oxmo",
-      "mpm": 30,
+      "mpm": 103,
       "top_word": "Vie",
       "twScore": 36,
-      "mots_uniques": 7600,
+      "mots_uniques": 6400,
       "titres": 37,
       "albums": 3
     },
@@ -15,12 +15,12 @@
       "name": "PNL",
       "image": "pnl.jpeg",
       "to": "pnl",
-      "mpm": 22,
+      "mpm": 128,
       "top_word": "Belle",
       "twScore": 24,
       "mots_uniques": 5431,
-      "titres": 132,
-      "albums": 3,
+      "titres": 71,
+      "albums": 4,
       "surname": "Ademo & NOS",
       "age": "35 & 32",
       "lieux": "Corbeil-Essones",
@@ -57,7 +57,7 @@
       "name": "JUL",
       "image": "jul.jpeg",
       "to": "jul",
-      "mpm": 31,
+      "mpm": 190,
       "top_word": "Monde",
       "twScore": 29,
       "mots_uniques": 3500,
@@ -68,18 +68,49 @@
       "name": "Nekfeu",
       "image": "nekfeu.png",
       "to": "nekfeu",
-      "mpm": 41,
-      "top_word": "Soir",
+      "mpm": 200,
+      "top_word": "Nuit",
       "twScore": 51,
-      "mots_uniques": 10020,
-      "titres": 82,
-      "albums": 3
+      "mots_uniques": 8450,
+      "titres": 68,
+      "albums": 3,
+      "surname": "Le Fennek",
+      "age": "31",
+      "lieux": "Paris",
+      "description": "Nekfeu est considéré comme le lyricists du paysage hip-«hop français. Une plume reconnue par ses pairs ainsi que par la publique. Le rappeur d’origine grecque sait manier ses flows et excelle sur des ppm rapides en kickant très rapidement mais il sait aussi ralentir et prendre le temps sur un flow plus doux. Que diront ses statistiques de lui ?",
+      "time_med": "3:50",
+      "time_min": "1:31",
+      "time_max": "8:46",
+      "time_min_name": "Interlude Fifty",
+      "time_max_name": "Risible amours",
+      "top_words": [
+        {
+          "word": "feu",
+          "iteration": 310
+        },
+        {
+          "word": "rêves",
+          "iteration": 240
+        },
+        {
+          "word": "sens",
+          "iteration": 206
+        },
+        {
+          "word": "question",
+          "iteration": 135
+        },
+        {
+          "word": "temps",
+          "iteration": 134
+        }
+      ]
     },
     {
       "name": "Booba",
       "image": "booba.jpeg",
       "to": "booba",
-      "mpm": 45,
+      "mpm": 192,
       "top_word": "Mieux",
       "twScore": 44,
       "mots_uniques": 7200,

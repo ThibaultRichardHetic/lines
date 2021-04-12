@@ -51,8 +51,8 @@ export default {
   data() {
     return {
       title: "Nombre de mots par minute",
-      steps: [0, 10, 20, 30, 40, 50],
-      step_max: 60,
+      steps: [0, 100, 50, 150, 200,],
+      step_max: 200,
       myJson: data_artiste,
       buttonArtiste: "active",
       buttonTitre: "inactive",
@@ -103,13 +103,13 @@ export default {
       };
       this.buttonArtiste = "inactive";
       this.buttonTitre = "active";
-      this.step_max = 120;
+      // this.step_max = 120;
       this.myJson = test;
     },
     changeArtiste: function() {
       this.buttonTitre = "inactive";
       this.buttonArtiste = "active";
-      this.step_max = 60;
+      // this.step_max = 60;
       this.myJson = data_artiste;
     }
   }

@@ -9,7 +9,7 @@
         Aléatoire
         <img src="@/assets/images/random.svg" alt>
       </CpLink>
-      <CpLink to="/" type="button">Essayer</CpLink>
+      <CpLink page="/artiste/nekfeu" type="button">Essayer</CpLink>
     </div>
   </div>
 </template>

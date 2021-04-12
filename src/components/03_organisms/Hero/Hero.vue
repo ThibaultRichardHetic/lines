@@ -20,7 +20,7 @@
       </div>
       <!-- Hero de la page artiste  -->
       <div v-else v-for="artiste in myJson.artiste" :key="artiste.name">
-        <div class="hero--artiste" v-if="$route.params.id === artiste.name">
+        <div class="hero--artiste" v-if="$route.params.id === artiste.to">
           <div class="hero__card">
             <div class="container--card">
               <div class="card--bg">

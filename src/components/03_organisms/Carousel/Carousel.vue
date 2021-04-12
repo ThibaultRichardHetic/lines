@@ -2,7 +2,7 @@
   <div class="container--carousel">
     <CpText tag="h2" type="title">{{ title }}</CpText>
     <VueSlickCarousel v-bind="settings">
-      <div class="container--slide" v-for="artiste in artistes" :key="artiste.name">
+      <div class="container--slide" v-for="artiste in myJson.artiste" :key="artiste.name">
         <div class="slide--bg">
           <div class="container--image">
             <img :src="require(`@/assets/images/artistes/${artiste.image}`)" alt>
@@ -22,6 +22,7 @@
 <script>
 import CpText from "@/components/01_atoms/CpText/CpText.vue";
 import CpLink from "@/components/01_atoms/CpLink/CpLink.vue";
+import data_artiste from "@/assets/data/Artistes.json";
 
 import VueSlickCarousel from "vue-slick-carousel";
 import "vue-slick-carousel/dist/vue-slick-carousel.css";
@@ -43,64 +44,7 @@ export default {
         slidesToScroll: 1,
         infinite: true
       },
-      artistes: [
-        {
-          name: "Oxmo Puccino",
-          titres: 37,
-          albums: 3,
-          image: "oxmo-puccino.jpeg",
-          to: "oxmo"
-        },
-        {
-          name: "PNL",
-          titres: 137,
-          albums: 3,
-          image: "pnl.jpeg",
-          to: "pnl"
-        },
-        {
-          name: "JUL",
-          titres: 327,
-          albums: 7,
-          image: "jul.jpeg",
-          to: "jul"
-        },
-        {
-          name: "Nekfeu",
-          titres: 82,
-          albums: 3,
-          image: "nekfeu.png",
-          to: "nekfeu"
-        },
-        {
-          name: "Oxmo Puccino",
-          titres: 37,
-          albums: 3,
-          image: "oxmo-puccino.jpeg",
-          to: "oxmo-puccino"
-        },
-        {
-          name: "PNL",
-          titres: 137,
-          albums: 3,
-          image: "pnl.jpeg",
-          to: "pnl"
-        },
-        {
-          name: "JUL",
-          titres: 327,
-          albums: 7,
-          image: "jul.jpeg",
-          to: "jul"
-        },
-        {
-          name: "Nekfeu",
-          titres: 82,
-          albums: 3,
-          image: "nekfeu.png",
-          to: "nekfeu"
-        }
-      ]
+      myJson: data_artiste
     };
   }
 };

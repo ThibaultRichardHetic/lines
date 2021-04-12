@@ -1,8 +1,9 @@
 {
   "artiste": [
     {
-      "name": "oxmo",
+      "name": "Oxmo Puccino",
       "image": "oxmo-puccino.jpeg",
+      "to": "oxmo",
       "mpm": 30,
       "top_word": "Vie",
       "twScore": 36,
@@ -11,8 +12,9 @@
       "albums": 3
     },
     {
-      "name": "pnl",
+      "name": "PNL",
       "image": "pnl.jpeg",
+      "to": "pnl",
       "mpm": 22,
       "top_word": "Belle",
       "twScore": 24,
@@ -26,8 +28,9 @@
       "med_time": "3:57"
     },
     {
-      "name": "jul",
+      "name": "JUL",
       "image": "jul.jpeg",
+      "to": "jul",
       "mpm": 31,
       "top_word": "Monde",
       "twScore": 29,
@@ -36,8 +39,9 @@
       "albums": 7
     },
     {
-      "name": "nekfeu",
+      "name": "Nekfeu",
       "image": "nekfeu.png",
+      "to": "nekfeu",
       "mpm": 41,
       "top_word": "Soir",
       "twScore": 51,
@@ -46,8 +50,9 @@
       "albums": 3
     },
     {
-      "name": "booba",
+      "name": "Booba",
       "image": "booba.jpeg",
+      "to": "booba",
       "mpm": 45,
       "top_word": "Mieux",
       "twScore": 44,

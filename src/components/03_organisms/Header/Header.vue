@@ -4,8 +4,8 @@
       <img src="@/assets/images/logo.png" alt>
     </CpLink>
     <div class="header__right">
-      <CpLink to="/" type="text">Artistes</CpLink>
-      <CpLink to="/" type="text-img">
+      <CpLink page="/artistes" type="text">Artistes</CpLink>
+      <CpLink page="/artiste/pnl" type="text-img">
         Aléatoire
         <img src="@/assets/images/random.svg" alt>
       </CpLink>

@@ -1,26 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&display=swap');
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('~@/assets/fonts/Gotham-Book.otf') format('opentype');
+  font-family: 'Dela Gothic One';
+  src: url('~@/assets/fonts/DelaGothicOne-Regular.ttf') format('truetype');
   font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Gotham-bold';
-  src: url('~@/assets/fonts/Gotham-Bold.otf') format('opentype');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Gotham-bolder';
-  src: url('~@/assets/fonts/Gotham-Black.otf') format('opentype');
-  font-weight: bolder;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Gotham';
-  src: url('~@/assets/fonts/Gotham-Light.otf') format('opentype');
-  font-weight: lighter;
   font-style: normal;
 }

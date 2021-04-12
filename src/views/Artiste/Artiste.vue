@@ -1,6 +1,5 @@
 <template>
   <div class="page--artiste">
-    artiste {{ $route.params.id }}
     <Header/>
     <Hero home="1" />
     <Carousel/>

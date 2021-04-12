@@ -65,4 +65,12 @@
       }
     }
   }
+
+  .container--buttons {
+    display: flex;
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 56px;
+    justify-content: space-between;
+  }
 }

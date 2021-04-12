@@ -41,4 +41,12 @@
       }
     }
   }
+
+  .container--buttons {
+    width: 60%;
+    margin: auto;
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between
+  }
 }

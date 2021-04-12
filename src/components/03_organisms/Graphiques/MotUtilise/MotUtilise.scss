@@ -36,4 +36,11 @@
       }
     }
   }
+  .container--buttons {
+    width: 60%;
+    margin: auto;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
